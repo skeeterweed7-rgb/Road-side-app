@@ -1,0 +1,5 @@
+{
+  "name": "County Road Chemical Logger",
+  "description": "A comprehensive application for logging chemical applications on county roads, tracking inventory, and recording environmental conditions.",
+  "requestFramePermissions": []
+}

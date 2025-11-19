@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>County Road Chemical Logger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Default Light Background for the App */
+      body {
+        background-color: #f8fafc; /* slate-50 */
+        color: #1e293b; /* slate-800 */
+      }
+
+      /* Custom Scrollbar for Webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9; /* slate-100 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1; /* slate-300 */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8; /* slate-400 */
+      }
+
+      /* Print Overrides */
+      @media print {
+        body {
+          background-color: white !important;
+          color: black !important;
+        }
+        .print-hide {
+          display: none !important;
+        }
+        .print-show {
+          display: block !important;
+        }
+        
+        /* Ensure no backgrounds print unless desired */
+        .bg-white, .bg-slate-50, .bg-gray-50 {
+          background-color: white !important;
+          border: 1px solid #ddd !important;
+          box-shadow: none !important;
+        }
+        
+        /* Table adjustments */
+        table {
+          width: 100% !important;
+          border-collapse: collapse !important;
+        }
+        th, td {
+          border: 1px solid #ddd !important;
+          padding: 8px !important;
+        }
+        thead th {
+          background-color: #eee !important;
+          color: black !important;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
